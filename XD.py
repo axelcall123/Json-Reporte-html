@@ -71,7 +71,7 @@ principal = """
     <link rel="stylesheet" href="css/css.css">
     <title>Document</title>
 </head><body>"""
-f = open('holamundo.html','w')#nombre documento pagina web
+f = open('hiworld.html','w')#nombre documento pagina web
 principal = """
 <!DOCTYPE html>
 <html lang="en">
@@ -92,4 +92,4 @@ f.write(principal)#inicio
 f.write(cuerpos)#medio
 f.write(fin)#final
 f.close()#cerar
-webbrowser.open_new_tab('holamundo.html')#generar
+webbrowser.open_new_tab('hiworld.html')#generar
