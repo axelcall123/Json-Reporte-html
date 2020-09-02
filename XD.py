@@ -53,7 +53,7 @@ def html():
             saldo.append(caracteristicas[a])
     for ids in range(len(nombre)):
                   #DiContI       +Di12I+'REPORTE#'+str(numero+1)+DiCe    +Di4I+str(atri[0]).upper()+HR+str(carac[0])+DiCe+ Di4I+str(atri[1]).upper()+HR+str(carac[1])+DiCe+ Di4I+str(atri[2]).upper()+HR+str(carac[2])+DiCe+ Di4I+str(atri[3]).upper()+HR+str(carac[3])+DiCe+   DiCe+DiCe
-        body=body+DiContI       +Di12I+'REPORTE#'+DiCe                   +Di4I+'NOMBRE'+HR+str(nombre[ids])+DiCe+ Di4I+'EDAD'+HR+str(edad[ids])+DiCe+ Di4I+'ACTIVO'+HR+str(activo[ids])+DiCe+Di4I+ 'SALDO'+HR+str(saldo[ids])+DiCe+   DiCe+DiCe
+        body=body+DiContI       +Di12I+'REPORTE#'+str(ids+1)+DiCe                   +Di4I+'NOMBRE'+HR+str(nombre[ids])+DiCe+ Di4I+'EDAD'+HR+str(edad[ids])+DiCe+ Di4I+'ACTIVO'+HR+str(activo[ids])+DiCe+Di4I+ 'SALDO'+HR+str(saldo[ids])+DiCe+   DiCe+DiCe
     return body
 
 #for id in range(int(sep_palabras_coma[0])):
